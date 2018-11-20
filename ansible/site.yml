@@ -1,0 +1,20 @@
+---
+  - name: Nginx install with docker
+    hosts: "{{ host1 }}"
+    become: true
+    tasks:
+      - include_tasks: /home/mohan/worktask/ansible/role/Docker/tasks/ngnix.yml
+
+
+  - name: Node install with docker
+    hosts: "{{ host2 }}"
+    become: true
+    tasks:
+      - include_tasks: /home/mohan/worktask/ansible/role/Docker/tasks/node.yml
+
+
+
+
+
+
+
